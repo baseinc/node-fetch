@@ -1,0 +1,10 @@
+{
+    // プロジェクトに合わせて変更してください
+    "include": ["src/**/*"],
+    "compilerOptions": {
+      "allowJs": true,
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "outDir": "typings"
+    },
+  }
