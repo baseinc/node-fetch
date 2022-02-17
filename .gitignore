@@ -35,7 +35,7 @@ node_modules
 .DS_Store
 
 # Babel-compiled files
-lib
+# lib
 
 # Ignore package manager lock files
 package-lock.json

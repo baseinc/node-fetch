@@ -43,6 +43,7 @@
     "url": "https://opencollective.com/node-fetch"
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.3",
     "@babel/core": "^7.17.4",
     "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "abort-controller": "^3.0.0",
@@ -64,8 +65,8 @@
     "xo": "^0.39.1"
   },
   "dependencies": {
-    "data-uri-to-buffer": "^4.0.0",
-    "fetch-blob": "^3.1.4",
+    "data-uri-to-buffer": "file:./vendor/data-uri-to-buffer",
+    "fetch-blob": "file:./vendor/fetch-blob",
     "formdata-polyfill": "^4.0.10"
   },
   "tsd": {
