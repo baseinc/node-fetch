@@ -55,7 +55,6 @@ export function getTotalBytes(request: any): number | null;
 export function writeToStream(dest: Stream.Writable, { body }: {
     body: any;
 }): Promise<void>;
-import { FormData } from "formdata-node/@type/FormData";
 import { Buffer } from "buffer";
 declare const INTERNALS: unique symbol;
 export {};

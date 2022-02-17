@@ -3,7 +3,7 @@
 		[
 			"@babel/plugin-transform-modules-commonjs",
 			{
-				"allowTopLevelThis": true
+				"importInterop": "node"
 			}
 		]
 	]
