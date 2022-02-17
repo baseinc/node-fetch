@@ -7,7 +7,7 @@ import { dirname } from "path";
 
 const globAsync = util.promisify(glob);
 
-const files = await globAsync("src/**/*.js");
+const files = await globAsync("src/**/*.{js,cjs}");
 console.log(files);
 const outDir = 'lib';
 
