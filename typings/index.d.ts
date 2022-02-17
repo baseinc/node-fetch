@@ -6,7 +6,6 @@
  * @return  {Promise<import('./response').default>}
  */
 export default function fetch(url: string | URL | import('./request').default, options_?: any): Promise<import('./response').default>;
-import { FormData } from "formdata-polyfill/esm.min.js";
 import Headers from "./headers.js";
 import Request from "./request.js";
 import Response from "./response.js";

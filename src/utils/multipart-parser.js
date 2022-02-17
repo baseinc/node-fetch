@@ -1,5 +1,5 @@
-import {File} from './vendor/fetch-blob/from.js';
-import {FormData} from 'formdata-node';
+import {File} from '../vendor/fetch-blob/from';
+import {FormData} from '../vendor/formdata-polyfill';
 
 let s = 0;
 const S = {
