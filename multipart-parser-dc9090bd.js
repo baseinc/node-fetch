@@ -1,5 +1,24 @@
-import {File} from 'fetch-blob/from.js';
-import {FormData} from 'formdata-polyfill/esm.min.js';
+/* eslint-disable */
+'use strict';
+
+require('fs');
+require('path');
+var worker_threads = require('worker_threads');
+var index = require('./index-3a548b1a.js');
+require('http');
+require('https');
+require('zlib');
+require('stream');
+require('util');
+require('url');
+require('net');
+
+globalThis.DOMException || (() => {
+	const port = new worker_threads.MessageChannel().port1;
+	const ab = new ArrayBuffer(0);
+	try { port.postMessage(ab, [ab, ab]); }
+	catch (err) { return err.constructor }
+})();
 
 let s = 0;
 const S = {
@@ -333,7 +352,7 @@ function _fileName(headerValue) {
 	return filename;
 }
 
-export async function toFormData(Body, ct) {
+async function toFormData(Body, ct) {
 	if (!/multipart/i.test(ct)) {
 		throw new TypeError('Failed to fetch');
 	}
@@ -353,7 +372,7 @@ export async function toFormData(Body, ct) {
 	let contentType;
 	let filename;
 	const entryChunks = [];
-	const formData = new FormData();
+	const formData = new index.FormData();
 
 	const onPartData = ui8a => {
 		entryValue += decoder.decode(ui8a, {stream: true});
@@ -364,7 +383,7 @@ export async function toFormData(Body, ct) {
 	};
 
 	const appendFileToFormData = () => {
-		const file = new File(entryChunks, filename, {type: contentType});
+		const file = new index.File(entryChunks, filename, {type: contentType});
 		formData.append(entryName, file);
 	};
 
@@ -430,3 +449,7 @@ export async function toFormData(Body, ct) {
 
 	return formData;
 }
+
+exports.toFormData = toFormData;
+/* eslint-enable */
+//# sourceMappingURL=multipart-parser-dc9090bd.js.map
