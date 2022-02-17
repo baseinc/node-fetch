@@ -1,10 +1,20 @@
-import {FetchBaseError} from './base.js';
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.AbortError = void 0;
+
+var _base = require("./base.js");
 
 /**
  * AbortError interface for cancelled requests
  */
-export class AbortError extends FetchBaseError {
-	constructor(message, type = 'aborted') {
-		super(message, type);
-	}
+class AbortError extends _base.FetchBaseError {
+  constructor(message, type = 'aborted') {
+    super(message, type);
+  }
+
 }
+
+exports.AbortError = AbortError;
