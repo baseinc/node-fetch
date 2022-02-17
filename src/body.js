@@ -10,7 +10,7 @@ import {types, deprecate, promisify} from 'node:util';
 import {Buffer} from 'node:buffer';
 
 import Blob from './vendor/fetch-blob';
-import {FormData, formDataToBlob} from 'formdata-polyfill/formdata.min.js';
+import {FormData, formDataToBlob} from 'formdata-node';
 
 import {FetchError} from './errors/fetch-error.js';
 import {FetchBaseError} from './errors/base.js';
