@@ -12,7 +12,7 @@ import zlib from 'node:zlib';
 import Stream, {PassThrough, pipeline as pump} from 'node:stream';
 import {Buffer} from 'node:buffer';
 
-import dataUriToBuffer from 'data-uri-to-buffer';
+import dataUriToBuffer from './vendor/data-uri-to-buffer';
 
 import {writeToStream, clone} from './body.js';
 import Response from './response.js';

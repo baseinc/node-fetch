@@ -1,4 +1,4 @@
-import {File} from 'fetch-blob/lib/from.js';
+import {File} from './vendor/fetch-blob/from.js';
 import {FormData} from 'formdata-polyfill/formdata.min.js';
 
 let s = 0;
