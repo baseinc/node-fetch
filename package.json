@@ -1,5 +1,5 @@
 {
-  "name": "node-fetch",
+  "name": "node-fetch-v3-patch",
   "version": "3.1.1",
   "description": "A light-weight module that brings Fetch API to node.js",
   "main": "index.js",
